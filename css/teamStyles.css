@@ -1,0 +1,120 @@
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.team-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-team-btn {
+    z-index: 10;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.delete-team-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.team-card {
+    cursor: pointer;
+}
+
+.team-card .card-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+.team-card .btn-primary {
+    transition: all 0.3s ease;
+}
+
+.team-card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #ffc107, #e94560);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar-dark.bg-dark {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px;
+    margin: 0 2px;
+    color: #ffc107;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler {
+    border: 2px solid #ffc107;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.5);
+}
+
+.navbar .nav-link:last-child:not(.btn) {
+    color: #ffc107;
+    font-weight: 500;
+}
+
+.navbar .btn-danger {
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
