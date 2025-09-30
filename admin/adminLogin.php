@@ -14,7 +14,7 @@
     require('../config/database.php');
 
     // Añadir la Clave del Captcha
-    $secret_key = "";
+    $secret_key = "6Leg8j8rAAAAAFq_Ni7FnUgCEyNOZmw-0RZVTP03";
 
     // Inicializacion de las variables
     $usuario_value = "";
@@ -44,7 +44,7 @@
                 $contrasena = $_POST["contrasena"];
 
                 // Consulta
-                $stmt = $_conexion->prepare("SELECT id, user, password FROM admins WHERE user = ? AND contrasena = SHA2(?, 256)");
+                $stmt = $_conexion->prepare("SELECT id, user, password FROM admins WHERE user = ?");
                 $stmt->bind_param("s", $usuario);
                 $stmt->execute();
                 $resultado = $stmt->get_result();
@@ -53,7 +53,11 @@
                     $err_usuario = "El usuario no existe";
                 } else {
                     $info_usuario = $resultado->fetch_assoc();
-                    if ($contrasena === $info_usuario['password']) {
+                    $storedHash = $info_usuario['password'];
+                    $inputHash = hash('sha256', $contrasena);
+                    
+                    // Contraseña cifrada
+                    if (hash_equals($storedHash, $inputHash)) {
                         session_start();
                         $_SESSION["usuario_id"] = $info_usuario["id"];
                         $_SESSION["usuario"] = $usuario;
@@ -99,7 +103,7 @@
 
             <!-- Captcha (Poner tu SecretKey en sitekey) -->
             <div class="mb-3">
-                <div class="g-recaptcha" data-sitekey=""></div>
+                <div class="g-recaptcha" data-sitekey="6Leg8j8rAAAAAJ7vFv4p--JtvHd7J-Rw-FhBXEg3"></div>
                 <?php if (isset($err_captcha)) echo "<span class='error-text php-error'>$err_captcha</span>" ?>
             </div>
 
