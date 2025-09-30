@@ -1,6 +1,6 @@
 # FootballDesk
 
-[🇪🇸 Leer en español](README.es.md)
+[Leer en español](README.es.md)
 
 > Personal project:
 
