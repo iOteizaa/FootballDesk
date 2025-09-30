@@ -14,7 +14,7 @@
     require('../config/database.php');
 
     // Añadir la Clave del Captcha
-    $secret_key = "6Leg8j8rAAAAAFq_Ni7FnUgCEyNOZmw-0RZVTP03";
+    $secret_key = "";
 
     // Inicializacion de las variables
     $usuario_value = "";
@@ -103,7 +103,7 @@
 
             <!-- Captcha (Poner tu SecretKey en sitekey) -->
             <div class="mb-3">
-                <div class="g-recaptcha" data-sitekey="6Leg8j8rAAAAAJ7vFv4p--JtvHd7J-Rw-FhBXEg3"></div>
+                <div class="g-recaptcha" data-sitekey=""></div>
                 <?php if (isset($err_captcha)) echo "<span class='error-text php-error'>$err_captcha</span>" ?>
             </div>
 
