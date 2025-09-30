@@ -56,7 +56,7 @@
                     $storedHash = $info_usuario['password'];
                     $inputHash = hash('sha256', $contrasena);
                     
-                    // Contraseña cifrada
+                    // Contraseña cifrada (SHA2)
                     if (hash_equals($storedHash, $inputHash)) {
                         session_start();
                         $_SESSION["usuario_id"] = $info_usuario["id"];
