@@ -24,32 +24,6 @@ FootballDesk es una aplicación web que te permite gestionar tus equipos de fút
 - CSS
 - JavaScript
 
-## Instalación
-
-1. Clona este repositorio
-
-```bash
-git clone https://github.com/iOteizaa/FootballDesk.git
-```
-2. Importa las bases de datos (/sql):
-- Ejecuta `sql/script.sql` para crear las tablas.
-- Ejecuta `sql/data.sql` para insertar datos de ejemplo (opcional).
-
-3. Configura la conexión a la base de datos (/config/database.php).
-    
-4. Inicia un servidor local (XAMPP) y accede al proyecto.
-
-## Uso
-
-1. Crea una cuenta de administrador
-Antes de poder añadir, editar o eliminar equipos, jugadores o partidos, primero debes crear una cuenta de administrador.
-
-2. Accede a la aplicación
-Abre tu navegador y accede a `http://localhost/FootballDesk`.
-
-3. Gestiona el contenido
-Una vez que hayas iniciado sesión como administrador, podrás administrar equipos, jugadores y partidos fácilmente desde la interfaz.
-
 ## Demo
 
 ### Detalles del equipo
