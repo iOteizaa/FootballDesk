@@ -13,7 +13,7 @@ FootballDesk is a web app for managing football teams, players, and matches thro
 - Schedule and track matches.
 - Responsive design with Bootstrap.
 
-## Technologies
+## Tech Stack
 
 ### Backend
 - PHP
