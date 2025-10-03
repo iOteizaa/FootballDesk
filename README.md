@@ -23,6 +23,8 @@ FootballDesk is a web app for managing football teams, players, and matches thro
 - HTML
 - CSS
 - JavaScript
+### API
+- Google reCAPTCHA
 
 ## Installation
 
@@ -36,8 +38,11 @@ git clone https://github.com/iOteizaa/FootballDesk.git
 - Run `sql/data.sql` to insert sample data (optional).
 
 3. Configure the database connection (/config/database.php).
+
+4. Configure API keys:
+- Add your Google reCAPTCHA (site key and secret key)
     
-4. Start a local server (XAMPP) and access the project.
+5. Start a local server (XAMPP) and access the project.
 
 ## Usage
 
